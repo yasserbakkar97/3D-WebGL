@@ -119,7 +119,6 @@ window.onload = function init() {
     document.getElementById("fovy").oninput = function (event) {
         fovy = parseFloat(event.target.value);
         projectionMatrix = perspective(fovy, aspect, near, far);
-        //    gl.uniformMatrix4fv(projectionMatrixLoc, false, flatten(projectionMatrix));
     };
 
     document.getElementById("tarX").onchange = function (event) {
